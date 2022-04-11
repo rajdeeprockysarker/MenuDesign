@@ -1,0 +1,29 @@
+{
+  "DrawerLayout": [
+    {
+      "menu_name": "Home",
+      "menu_childe": [
+      ]
+    },
+    {
+      "menu_name": "Import/Export Product",
+      "menu_childe": [
+      ]
+    },
+    {
+      "menu_name": "Broadcast Coupon",
+      "menu_childe": [
+      ]
+    },
+    {
+      "menu_name": "Contact Us",
+      "menu_childe": [
+      ]
+    },
+    {
+      "menu_name": "Log Out",
+      "menu_childe": [
+      ]
+    }
+  ]
+}

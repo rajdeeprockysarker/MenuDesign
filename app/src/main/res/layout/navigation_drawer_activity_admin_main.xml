@@ -1,0 +1,200 @@
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/container_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <RelativeLayout
+                    android:id="@+id/rel_nav_admin_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center|left"
+                        android:orientation="horizontal"
+                        android:paddingLeft="50dp"
+                        android:paddingRight="42dp">
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Welcome to "
+
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/header_farmpal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="farmpal"
+                            android:textColor="#1ca523"
+                            android:textSize="27sp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/header_kisan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text=" Kisan"
+                            android:textColor="#e4630d"
+                            android:textSize="27sp"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_menu"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"></RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_nav_admin_header_back_arrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center|left"
+                        android:orientation="horizontal"
+                        android:paddingLeft="70dp"
+                        android:paddingRight="42dp">
+
+                        <TextView
+                            android:id="@+id/tv_name_back_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Welcome to "
+
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/header_farmpal_back_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="#1ca523"
+                            android:textSize="27sp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/header_kisan_back_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="#e4630d"
+                            android:textSize="27sp"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_menu_back_arrow"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"></RelativeLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:gravity="right|center">
+
+                    <ImageView
+                        android:id="@+id/notification_bell"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_launcher_background" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <FrameLayout
+                    android:id="@+id/content_frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/left_drawer"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <include layout="@layout/navigation_drawer_menu_admin_layout"></include>
+
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
